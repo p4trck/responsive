@@ -1,0 +1,210 @@
+:root {
+  --clr-primary-: rgb(87, 64, 171);
+  --clr-light-: rgb(144, 127, 205);
+  --clr-head-: #022b3a;
+  --ff-primary-: "roboto";
+  --ff-head-: "Kdam Thmor Pro";
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body,
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3 {
+  line-height: 1;
+}
+.container {
+  margin-inline: auto;
+  width: min(90%, 70.5rem);
+  align-content: center;
+  margin-top: 5px;
+}
+body {
+  font-family: var(--ff-primary-);
+  font-size: 1.3125rem;
+  line-height: 1.6;
+}
+.text-center {
+  text-align: center;
+  margin-bottom: 5px;
+}
+.nav-links ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 10px 0 0 0;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+.head {
+  letter-spacing: 5px;
+}
+.nav-links li {
+  display: inline;
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+  font-family: var(--ff-head-);
+}
+section {
+  padding: 3rem 0s;
+}
+.intro {
+  font-family: var(--ff-head-);
+  color: black;
+  text-align: center;
+  padding: 1rem;
+  margin: 0;
+}
+.burger {
+  display: none;
+}
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: whitesmoke;
+  margin: 5px;
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  background-color: #022b3a;
+  font-family: monospace;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  width: 35%;
+}
+.nav-links a {
+  color: whitesmoke;
+  transition: all 450ms ease-in;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 17px;
+}
+.logo {
+  color: whitesmoke;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  font-size: 20px;
+}
+.main {
+  padding: 0;
+  margin: 0;
+  font-family: var(--ff-head-);
+}
+.img1 {
+  margin: 0;
+  padding: 0;
+  font-family: var(--ff-primary-);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.leftad {
+  z-index: 2;
+  color: black;
+}
+.lside {
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  font-family: var(--ff-primary-);
+}
+.rside {
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  font-family: var(--ff-primary-);
+}
+
+.bg-light {
+  background-color: var(--clr-head-);
+}
+.bg-primary {
+  background-color: var(--clr-primary-);
+}
+
+.split {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 40em) {
+  .split {
+    flex-direction: row;
+  }
+
+  .split > * {
+    flex-basis: 100%;
+  }
+
+  .split > * + * {
+    margin-left: 2em;
+  }
+}
+
+.split > * {
+  flex-basis: 100%;
+}
+
+.split > * + * {
+  margin-left: 2em;
+}
+
+.container--narrow {
+  max-width: 34rem;
+}
+
+@media screen and (max-width: 700px) {
+  .nav-links {
+    position: absolute;
+    right: 0px;
+    height: 92vh;
+    top: 8vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #022b3a;
+    transform: translateX(100%);
+    transition: transform 500ms ease-in;
+  }
+  .nav-links li {
+    opacity: 0%;
+  }
+  .burger {
+    display: block;
+    cursor: pointer;
+  }
+}
+
+.nav-active {
+  transform: translateX(0%);
+}
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}

@@ -1,0 +1,21 @@
+@media screen and (min-width: 700px) {
+  .parent {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 50px, repeat(5, 1fr);
+  }
+}
+/*If four <grid-line> values are specified, grid-row-start is set to the first value, grid-column-start is set to the second value, grid-row-end is set to the third value, and grid-column-end is set to the fourth value.*/
+
+nav {
+  grid-area: 1 / 1 / 2 / 6;
+}
+.main {
+  grid-area: 2 / 2 / 6 / 5;
+}
+.lside {
+  grid-area: 2 / 1 / 6 / 1;
+}
+.rside {
+  grid-area: 2/ 5 / 6 / 5;
+}

@@ -1,0 +1,4 @@
+nav ul :hover {
+  color: rgb(72, 94, 193);
+  transition: all 450ms ease-in;
+}
