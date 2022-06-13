@@ -13,9 +13,7 @@
   margin: 0;
   padding: 0;
 }
-body {
-  overflow: hidden;
-}
+
 body,
 h1,
 h2,
@@ -190,7 +188,7 @@ nav {
     transition: transform 500ms ease-in;
   }
   .nav-links li {
-    opacity: 0%;
+    opacity: 100%;
   }
   .burger {
     display: block;

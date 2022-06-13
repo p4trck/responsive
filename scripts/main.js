@@ -7,17 +7,16 @@ const navSlide = () => {
 
     burger.addEventListener('click', () => {
         nav.classList.toggle('nav-active');
-    })
+    });
 
 
     // Animate Links 
 
-   navLinks.forEach((link,index) => {
-    link.animate = 'navLinkFade 500ms ease forwards ${index/7}s';
-   });
-
-
-
+    navLinks.forEach((link,index) => {
+        link.style.animation = 'navLinkfade 500ms ease forwards ${index / 7}s';
+        console.log(index/7);
+    });
+}
 
 navSlide();
 
