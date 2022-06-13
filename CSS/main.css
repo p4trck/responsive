@@ -13,6 +13,9 @@
   margin: 0;
   padding: 0;
 }
+body {
+  overflow: hidden;
+}
 body,
 h1,
 h2,
@@ -198,6 +201,7 @@ nav {
 .nav-active {
   transform: translateX(0%);
 }
+
 @keyframes navLinkFade {
   from {
     opacity: 0;
