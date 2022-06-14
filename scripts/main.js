@@ -13,7 +13,7 @@ const navSlide = () => {
     // Animate Links 
 
     navLinks.forEach((link,index) => {
-        link.style.animation = 'navLinkfade 500ms ease forwards ${index / 7}s';
+        link.style.animation = 'navLinkfade .5s ease forwards ${index / 7+ 1.5}s';
         console.log(index/7);
     });
 }
