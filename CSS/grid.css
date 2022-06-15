@@ -19,7 +19,3 @@ nav {
 .rside {
   grid-area: 2/ 5 / 6 / 5;
 }
-.footer {
-  grid-column: 1;
-  grid-row: 5;
-}

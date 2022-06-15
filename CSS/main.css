@@ -13,11 +13,9 @@
   margin: 0;
   padding: 0;
 }
-
-html,
-body,
-.wrapper {
+.parent {
   overflow-x: hidden;
+  position: relative;
 }
 body,
 h1,
@@ -153,7 +151,6 @@ nav {
 .footer {
   margin: 10px;
   padding: 10px;
-  display: block;
 }
 
 .bg-light {
@@ -194,9 +191,8 @@ nav {
 }
 
 @media screen and (max-width: 700px) {
-  .parent {
+  body {
     overflow-x: hidden;
-    position: absolute;
   }
   .nav-links {
     position: absolute;
