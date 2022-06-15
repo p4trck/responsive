@@ -112,6 +112,7 @@ nav {
   margin: 0;
   font-family: var(--ff-head-);
   overflow-x: hidden;
+  position: relative;
 }
 .img1 {
   margin: 0;
