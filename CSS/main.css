@@ -120,9 +120,16 @@ nav {
   margin-left: auto;
   margin-right: auto;
 }
-.leftad {
-  z-index: 2;
+#lad {
+  z-index: 1;
   color: black;
+  border: black solid;
+}
+#rad {
+  z-index: 1;
+  color: black;
+  border: black dashed;
+  display: flex;
 }
 .lside {
   background-color: white;
@@ -135,6 +142,9 @@ nav {
   margin: 0;
   padding: 0;
   font-family: var(--ff-primary-);
+}
+.footer {
+  margin: 5px;
 }
 
 .bg-light {
