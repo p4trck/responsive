@@ -149,7 +149,9 @@ nav {
   font-family: var(--ff-primary-);
 }
 .footer {
-  margin: 5px;
+  margin: 10px;
+  padding: 10px;
+  display: block;
 }
 
 .bg-light {
