@@ -17,6 +17,11 @@
   overflow-x: hidden;
   position: absolute;
 }
+html,
+body,
+.wrapper {
+  overflow-x: hidden;
+}
 body,
 h1,
 h2,
