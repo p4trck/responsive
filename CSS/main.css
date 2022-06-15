@@ -15,7 +15,7 @@
 }
 .parent {
   overflow-x: hidden;
-  position: relative;
+  position: absolute;
 }
 body,
 h1,
