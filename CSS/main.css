@@ -220,6 +220,11 @@ nav {
     display: block;
     cursor: pointer;
   }
+  .card1,
+  .card2,
+  .card3 {
+    font-size: medium;
+  }
 }
 
 .nav-active {
